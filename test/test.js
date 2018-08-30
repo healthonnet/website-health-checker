@@ -6,6 +6,15 @@ const websiteHealthGuesser = require('../src/lib/index.js');
 describe('website Health availability check', function() {
   this.timeout(15000);
 
+  it('should return false for unkwown name', function(done) {
+    websiteHealthGuesser.isHealthy('https://fdfdsfdsfds.com')
+      .then((health) => {
+          health.available.should.equal(false);
+          done();
+        }
+      );
+  });
+
   it('should return false for http://getstatuscode.com/404', function(done) {
     websiteHealthGuesser.isHealthy('https://getstatuscode.com/404')
       .then((health) => {
