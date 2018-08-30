@@ -5,7 +5,7 @@ const { checkUrl } = require('check-url');
 const request = require('request');
 const extractor = require('unfluff');
 const dns = require('dns');
-
+const { URL } = require('url');
 
 
 exports.isHealthy = (url, expectations = {}) => {
