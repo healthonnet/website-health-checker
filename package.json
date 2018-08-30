@@ -1,6 +1,6 @@
 {
   "name": "website-health-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "test and guess if website is down or bought by another person",
   "scripts": {
     "test": "jshint . && eslint . && mocha",
