@@ -113,9 +113,9 @@ License
 Apache License 2.0
 
 
-[npm-image]: https://img.shields.io/npm/v/website-health-guesser.svg
-[npm-url]: https://www.npmjs.com/package/website-health-guesser
-[travis-image]: https://travis-ci.org/healthonnet/website-health-guesser.svg?branch=master
-[travis-url]: https://travis-ci.org/healthonnet/website-health-guesser
-[coverage-image]: https://coveralls.io/repos/github/healthonnet/website-health-guesser/badge.svg
-[coverage-url]: https://coveralls.io/github/healthonnet/website-health-guesser
+[npm-image]: https://img.shields.io/npm/v/website-health-checker.svg
+[npm-url]: https://www.npmjs.com/package/website-health-checker
+[travis-image]: https://travis-ci.org/healthonnet/website-health-checker.svg?branch=master
+[travis-url]: https://travis-ci.org/healthonnet/website-health-checker
+[coverage-image]: https://coveralls.io/repos/github/healthonnet/website-health-checker/badge.svg
+[coverage-url]: https://coveralls.io/github/healthonnet/website-health-checker
