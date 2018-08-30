@@ -187,8 +187,7 @@ describe('website Health lang check', function() {
   this.timeout(15000);
 
   it('should return false if no correct lang is found', (done) => {
-    websiteHealthGuesser.isHealthy({
-      url: 'https://www.example.com',
+    websiteHealthGuesser.isHealthy('https://www.example.com', {
       lang: ['fr', 'it', 'pt'],
     }).then((health) => {
       health.available.should.equal(true);
