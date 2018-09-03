@@ -27,7 +27,7 @@ Command Line
 ```bash
 $ website-health-checker --help
 
-Usage: website-health-guesser <url> [options][-?, --help]
+Usage: website-health-checker <url> [options][-?, --help]
 
 Options:
   --version           Show version number                              [boolean]
@@ -36,7 +36,6 @@ Options:
   --ip                Optional: Website should respond from this ip
   --contains          Optional: Page should contains those words
   --blacklist         Optional: List of suspicious words                 [array]
-  --url, -u           url to check                                    [required]
   -?, --help          Show help                                        [boolean]
 
 ```

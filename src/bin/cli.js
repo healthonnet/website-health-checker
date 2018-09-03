@@ -28,13 +28,7 @@ const yargs = require('yargs')
       type: 'array',
       describe: 'Optional: List of suspicious words',
     },
-    url: {
-      alias: 'u',
-      describe: 'url to check',
-      demand: true,
-    },
   })
-  .demandOption('url')
   .help('?')
   .alias('?', 'help');
 
@@ -57,7 +51,7 @@ const analyseValues = (values, expectations) => {
   console.log(table.toString());
 };
 
-if (utils.isValidUrl(argv.url)) {
+if (utils.isValidUrl(argv._[0])) {
   let expectations = {};
   expectations.available = true;
   expectations.certifed = argv.certified;
@@ -66,7 +60,7 @@ if (utils.isValidUrl(argv.url)) {
   expectations.contains = argv.contains;
   expectations.blacklist = argv.blacklist;
 
-  tool.isHealthy(argv.url, expectations).then((values)=> {analyseValues(values, expectations);});
+  tool.isHealthy(argv._[0], expectations).then((values) => {analyseValues(values, expectations);});
 } else {
   console.log(argv.url + ' is not a valid url');
 }
