@@ -1,7 +1,7 @@
 Website Health Checker
 ======================
 
-Website Health Guesser NPM module
+Website Health Checker NPM module
 
 [![Build Status][travis-image]][travis-url]
 [![Coverage Status][coverage-image]][coverage-url]
