@@ -44,7 +44,7 @@ Usage
 -----
 
 ```js
-const healthChecker = require('website-health-guesser');
+const healthChecker = require('website-health-checker');
 
 healthChecker.isHealthy('https://www.example.com/', {
     certified: true, // Must be Honcode certified
