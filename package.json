@@ -51,7 +51,7 @@
     "coverage/**"
   ],
   "engines": {
-    "node": ">=6"
+    "node": ">=6.14"
   },
   "author": "Adrion <adrion.dev@gmail.com> (cedricfrossard@gmail.com)",
   "license": "MIT"
